@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="title" content="R & J Log Home Construction - We Building Best House For You">
+  <title>R & J Log Home Construction - We Building Best House For You</title>
+  <meta name="description"
+        content="We offer the Highest Quality Log Home Construction. We take our work very seriously. start with R&J Construction logs home kit assembly to get the job going">
+  <meta name="keywords"
+        content="log home, kits, plans, builders, log homes, for sale, maintenance, stain, ny, agency, guys, show, gallery, new york, companies, consturrction, contractors, cost, care,">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{% static "css/mdb.min.css" %}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{% static 'css/custom/base.css' %}">
+  <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+  {% block custom_css %}
+
+  {% endblock %}
+</head>
+<body class="black-skin">
+<header>
+{% include 'parts/sidebar.html' %}
+{% include 'parts/navigator.html' %}
+</header>
+<main class="mt-5 pt-5">
+  {% block content %}
+
+  {% endblock %}
+</main>
+{% include 'parts/footer.html' %}
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="{% static "js/jquery-3.4.1.min.js" %}"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="{% static "js/popper.min.js" %}"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="{% static "js/mdb.min.js" %}"></script>
+<script type="text/javascript" src="{% static 'vendors/lazy_load/lazyload.min.js' %}"></script>
+
+<script>
+  $('.button-collapse').sideNav();
+  let sideNavScrollbar = document.querySelector('.custom-scrollbar');
+  let ps = new PerfectScrollbar(sideNavScrollbar);
+</script>
+</body>
+</html>

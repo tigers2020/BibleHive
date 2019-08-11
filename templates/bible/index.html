@@ -1,0 +1,32 @@
+{% extends 'parts/base.html' %}
+{% block content %}
+  <div class="container">
+
+  {% for key, value in bibles.data.items %}
+    <hr/>
+    <p>{{ key }}: <span>{{ value|safe }}</span></p>
+    {% for key, value in bible.items %}
+        <p>{{ key }}: <span>{{ value|safe }}</span></p>
+      {% endfor %}
+
+  {% endfor %}
+{#        <div class="row">#}
+{#      {% for bible in bibles.data %}#}
+{#        <div class="col-md-3">#}
+{#          <div class="card">#}
+{#          <div class="card-body">#}
+{#              <div class="justify-content-between">#}
+{#                <h4 class="card-title font-weight-bold">{{ bible.name }}</h4><span class="badge-info">{{ bible.language.name }}</span>#}
+{#              </div>#}
+{#              <h5 class="card-title">{{ bible.nameLocal }}</h5>#}
+{##}
+{#            <p>{{ bible.description }}</p>#}
+{#              <a href="{% url "bibles-index" bible.id %}" class="btn-info btn">Read Bible</a>#}
+{##}
+{#          </div>#}
+{#          </div>#}
+{#        </div>#}
+{#      {% endfor %}#}
+{#    </div>#}
+  </div>
+{% endblock %}

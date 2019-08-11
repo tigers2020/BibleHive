@@ -1,0 +1,2 @@
+class DBpException(Exception):
+    pass

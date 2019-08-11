@@ -1,0 +1,16 @@
+{% extends 'parts/base.html' %}
+
+{% block content %}
+  {{ bibles }}
+  <section class="header">
+    <h4 class="h4-responsive">Information</h4>
+    <p>{{ books.data.info|safe }}</p>
+  </section>
+  <section class="main">
+      {{ books.data }}
+  </section>
+  <section class="footer-copyright">
+    <p>{{ books.data.copyright }}</p>
+  </section>
+
+{% endblock %}
